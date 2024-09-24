@@ -16,7 +16,7 @@ services:
 startup: application
 boot: auto
 map:
-  - config_addon
+  - ssl
 ingress: true
 ingress_port: 80
 ingress_stream: true

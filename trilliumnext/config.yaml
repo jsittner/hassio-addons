@@ -3,27 +3,40 @@ name: Trilium Next
 version: v0.90.5
 upstream: v0.90.5
 slug: triliumnext
-description: TriliumNext Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
-url: https://github.com/jsittner/homeassistant-addons/triliumnext
+description: The most powerful and extensible open source Wiki software
+url: https://github.com/FaserF/hassio-addons/tree/master/wiki.js
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-startup: services
+services:
+  - mysql:need
+startup: application
 boot: auto
 map:
-  - type: addon_config
-    read_only: False
+  - ssl
 ingress: true
-ingress_port: 8080
-panel_icon: mdi:flower
-environment:
-  TRILIUM_DATA_DIR: /config
+ingress_port: 80
+ingress_stream: true
+init: false
+auth_api: true
+panel_icon: mdi:wikipedia
+options:
+  ssl: true
+  certfile: cert_openssl.pem
+  keyfile: key_openssl.pem
+  log_level: info
 ports:
-  8080/tcp: 8080
+  3000/tcp: 3002
+  3443/tcp: 3443
 ports_description:
-  8080/tcp: Web interface
-image: triliumnext/notes
-webui: [PROTO:ssl]://[HOST]:[PORT:8080]
+  3000/tcp: HTTP Entrance port
+  3443/tcp: HTTPS/SSL Entrance port
+schema:
+  ssl: bool
+  certfile: str
+  keyfile: str
+  log_level: list(error|warn|info|debug)?
+  reset_database: bool?

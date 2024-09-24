@@ -4,7 +4,7 @@ version: 10.90.4
 upstream: 10.90.4
 slug: triliumnext
 description: TriliumNext Notes is a hierarchical note taking application with focus on building large personal knowledge bases.
-url: https://github.com/jsittner/homeassistant-addons
+url: https://github.com/jsittner/homeassistant-addons/triliumnext
 arch:
   - armhf
   - armv7

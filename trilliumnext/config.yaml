@@ -14,8 +14,7 @@ arch:
 startup: application
 boot: auto
 map:
-  - type: addon_config
-    read_only: False
+  - addon_config
 ingress: true
 ingress_port: 8080
 ingress_stream: true

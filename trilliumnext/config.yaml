@@ -14,7 +14,7 @@ arch:
 startup: services
 boot: auto
 map:
-  - ssl
+  - addon_config
 ingress: true
 ingress_port: 80
 ingress_stream: true

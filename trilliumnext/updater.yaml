@@ -5,4 +5,4 @@ repository: jsittner/homeassistant-addons
 slug: triliumnext
 source: github
 upstream_repo: triliumnext/notes
-upstream_version: v0.90.4
+upstream_version: 10.90.4

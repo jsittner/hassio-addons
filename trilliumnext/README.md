@@ -22,4 +22,4 @@ Webui can be found at `<your-ip>:port` or ingress.
 [repository]: https://github.com/jsittner/homeassistant-addons
 
 
-#1
+#2

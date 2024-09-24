@@ -14,7 +14,7 @@ arch:
 startup: services
 boot: auto
 map:
-  - addon_config:rw
+  - addons:rw
 ingress: true
 ingress_port: 8080
 panel_icon: mdi:flowerpoppy

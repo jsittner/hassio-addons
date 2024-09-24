@@ -30,3 +30,9 @@ ports_description:
   8080/tcp: Web interface
 image: triliumnext/notes
 webui: [PROTO:ssl]://[HOST]:[PORT:8080]
+schema:
+  ssl: bool
+  certfile: str
+  keyfile: str
+  log_level: list(error|warn|info|debug)?
+  reset_database: bool?

@@ -25,4 +25,4 @@ ports:
 ports_description:
   8080/tcp: Web interface
 image: triliumnext/notes
-webui: [PROTO:ssl]://[HOST]:[PORT:8080]
+webui: [PROTO:http]://[HOST]:[PORT:8080]

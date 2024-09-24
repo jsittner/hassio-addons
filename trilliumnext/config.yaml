@@ -1,7 +1,7 @@
 ---
 name: Trilium Next
-version: v0.90.5
-upstream: v0.90.5
+version: v0.90.4
+upstream: v0.90.4
 slug: triliumnext
 description: The most powerful and extensible open source Wiki software
 url: https://github.com/FaserF/hassio-addons/tree/master/wiki.js

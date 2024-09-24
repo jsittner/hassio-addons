@@ -13,11 +13,11 @@ arch:
   - i386
 startup: services
 boot: auto
+map:
+  - ssl
 ingress: true
-ingress_port: 8080
-panel_icon: mdi:flower
-ports:
-  8080/tcp: 8080
-ports_description:
-  8080/tcp: Web interface
-webui: [PROTO:http]://[HOST]:[PORT:8080]
+ingress_port: 80
+ingress_stream: true
+init: false
+auth_api: true
+panel_icon: mdi:wikipedia

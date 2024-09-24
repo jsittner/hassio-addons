@@ -21,3 +21,5 @@ ingress_stream: true
 init: false
 auth_api: true
 panel_icon: mdi:wikipedia
+environment:
+  TRILIUM_DATA_DIR: /config

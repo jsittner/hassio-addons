@@ -18,7 +18,7 @@ map:
     read_only: False
 ingress: true
 ingress_port: 8080
-panel_icon: mdi:flowerpoppy
+panel_icon: mdi:flower
 environment:
   TRILIUM_DATA_DIR: /config
 ports:

@@ -13,14 +13,12 @@ arch:
   - i386
 startup: services
 boot: auto
+init: false
 map:
-  - type: addon_configs:rw
-    read_only: False    
+  - type: addon_config
+    read_only: false
 ingress: true
 ingress_port: 8080
-ingress_stream: true
-init: false
-auth_api: true
 panel_icon: mdi:wikipedia
 environment:
   TRILIUM_DATA_DIR: /config
